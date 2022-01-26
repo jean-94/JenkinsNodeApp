@@ -3,14 +3,10 @@ const app = express();
 const host = 'localhost';
 const port = 5000;
 
-var hits;
-
 app.get('/', (req, res) => {
-    hits = 0; 
-    res.send(`Hello from my node app, you have visited me ${hits} times`);
+    res.send(`Hello from my node app, it is your first time here ! Welcome :)`);
 
 });
 
 app.listen(port, () => {
-  hits = hits + 1
 });
